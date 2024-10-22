@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="du">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ----------main style------------ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- ------------Google Fonts-------------- -->
+        <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <!-- --------------Icon pack font-awesome----------- -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- --------------------Google Maps Api---------------- -->
+        <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl7F3URup7S4Of3R3cJQLk535vNnUQRzg&callback=initMap">
+        </script>
+        <title>2Kei E-commerce Website</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <img src="images/2kie comm.png" width="10%" height="10%" alt="logo-image">
+
+                    <nav>
+                        <ul id="menu-items">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index3.html">Products</a></li>
+                            <li><a href="index2.html">Kids Hub</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="register.html">Account</a></li>
+                        </ul>
+                    </nav>
+                   
+                    <img src="images/cart.png" alt="cart" width="30px" height="30px" class="cart-img">
+                    <img src="images/menu.png" alt="menu" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <h1 class="text-white">Welcome To<br>2KEI ECOMO by Tukei Brian</h1>
+
+                        <h1 class="text-white">Great deals happening <br> Discount!!!</h1>
+                        <p>Enjoy a safe, convenient shopping experience</p>
+                        <a href="" class="btn btn-main">Explore Now &#8594;</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/curved_monitors-removebg-preview.png" alt="banner-image" class="center">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- featured products -->
+        <div class="small-container mt-5">
+            <h2 class="title">Our Products</h2>
+            <div class="row horizontal-scroll-wrapper squares">
+                <div class="col-4 box-container">
+                    <div class="image-overlay"></div>
+                    <img src="images/power-tab.jpeg" alt="tablet pc">
+                    <h5 class="product_name">Tablet Pc</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">Tablet Pc</h3>
+                        <h4 class="content-price">$ 1000.99</h4>
+                        <div class="content-btn btn btn-secondary" title="Add to Cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <p class="price_name" >$ 1000.99</p>
+                    <!-- <div class="btn btn-secondary" title="Preview Item"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    </div> -->
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/ps4-gaming.jpg" alt="Gaming console">
+                    <h5 class="product_name">X-box Console</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 2000</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/iphonex-phone.jpg" alt="Iphone X">
+                    <h5 class="product_name">IPhone X</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p class="price_name" >$ 4999.99</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/keyboard.jpg" alt="keyboard">
+                    <h5 class="product_name">Logitech Super Slim</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 199.99</p>
+                </div>
+            </div>
+            <!-- Latest products -->
+            <h2 class="title">Latest Products</h2>
+            <div class="row">
+                <div class="col-4 box-container">
+                    <img src="images/Alienware-laptop.png" alt="Gaming Laptop">
+                    <h5 class="product_name">X-box Console</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 2000</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/canon-cam.jpg" alt="Camera">
+                    <h5 class="product_name">Canon 12X Pro Shoot</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 990</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/iphone9-phone.jpg" alt="Iphone SE">
+                    <h5 class="product_name">IPhone SE</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 4999.99</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/logitech-tab.png" alt="Tablet Pc">
+                    <h5 class="product_name">Samsung Tablet PC</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price_name" >$ 3999.99</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/imac.jpg" alt="Imac">
+                    <h5 class="product_name">Apple Imac</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 7999.99</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/thunderbolt.jpeg" alt="Gaming Laptop">
+                    <h5 class="product_name">USB Type-C Thunderbolt</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 2000</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/laptop-gaming.jpg" alt="Gaming Laptop">
+                    <h5 class="product_name">Alienware Laptop</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 7000.99</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/iphone wireless charge.png" alt="Playstation 4">
+                    <h5 class="product_name">iphone wireless charger</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 1000.99</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/phantom-drone.png" alt="Phantom Drone">
+                    <h5 class="product_name">Phantom Drone</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price_name" >$ 2500.00</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/projectar.jpg" alt="Epson Projector">
+                    <h5 class="product_name">Projector</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 1000.99</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/ps4-headset.jpg" alt="Gaming Headset">
+                    <h5 class="product_name">Ps4 Gaming Headset</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 800</p>
+                </div>
+                
+                    <p class="price_name" >Rs800</p>
+                <div class="col-4 box-container">
+                    <img src="images/superbass-speakers.jpg" alt="Super Bass Laptop Speakers">
+                    <h5 class="product_name">Super Bass USB Speakers</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 1500</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/apple watch.png" alt="Fifa 20 Xbox">
+                    <h5 class="product_name">Apple watch</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 300</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://images.hindustantimes.com/tech/img/2022/03/29/960x540/IMG_20201103_210036_1605959336632_1648534084983.jpg" alt="iphone12">
+                    <h5 class="product_name">iphone12</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 1000.99</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://static.toiimg.com/photo/79167086.cms" alt="falcon-drone">
+                    <h5 class="product_name">iphone 128 GB</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 3000</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="data:image/jpeg;base64,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" alt="Fortnite">
+                    <h5 class="product_name">Small Table</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 300</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://m.media-amazon.com/images/I/71gm8v4uPBL._SL1500_.jpg" alt="iphone13">
+                    <h5 class="product_name">iphone13</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 300</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY3i8aYO1CGDeeNChqQXfH3CUI8cfr5qGTSg&usqp=CAU" alt="Fortnite">
+                    <h5 class="product_name">Dine Table</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 300</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://www.decornation.in/wp-content/uploads/2020/02/wooden-stool-wooden-table-contemporary-style-coffee-table.png" alt="Fortnite">
+                    <h5 class="product_name">Sofa Set</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 300</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://5.imimg.com/data5/AU/WV/MY-23875955/glass-top-wooden-table-500x500.jpg" alt="Fortnite">
+                    <h5 class="product_name">Glass Table</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 1300</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://99designs-start-attachments.imgix.net/alchemy-pictures/2016%2F01%2F26%2F21%2F38%2F27%2F9e6ce5bb-4ee0-4618-9a58-00b9d4487c0b%2F129788_Ivanpratt.png?auto=format&ch=Width%2CDPR&fm=png&w=558&h=669" alt="Fortnite">
+                    <h5 class="product_name">T Shirt L Size</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 3200</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://4.imimg.com/data4/AA/HC/MY-26596027/men-s-fancy-t-shirt-500x500.jpg" alt="Fortnite">
+                    <h5 class="product_name">Fancy T Shirt</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 300</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://cf.shopee.ph/file/f7f70e65570ffa9e359d1204af039441" alt="Fortnite">
+                    <h5 class="product_name">White T shirt</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 200</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/ubolt watch.png" alt="Fortnite">
+                    <h5 class="product_name">Ubolt Watch</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 300</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://n.nordstrommedia.com/id/sr3/c930ca14-a968-48eb-af5f-57a4a9bde0eb.jpeg?h=365&w=240&dpr=2" alt="Fortnite">
+                    <h5 class="product_name">Black T shirt</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 300</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://n.nordstrommedia.com/id/sr3/6d48f6c5-01ec-4233-b0c0-f7183f8737fa.jpeg?h=365&w=240&dpr=2" alt="Fortnite">
+                    <h5 class="product_name">Grey T shirt</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 300</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://assets.designhill.com/resize_img.php?atyp=st_page_file&pth=ft_bt_th7igwli_org||BT304112||two_heading_7images_gallery_with_link_image6_img&flp=1577447847-13660527105e05f1a7202e79-89455419.jpg" alt="Fortnite">
+                    <h5 class="product_name">America Printed T shirt</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 300</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/cpu set.png" alt="Fortnite">
+                    <h5 class="product_name">CPU SET</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 300</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://media.istockphoto.com/photos/selfie-ring-light-led-lamp-on-the-tripod-for-smart-phone-with-path-picture-id1306721899?k=20&m=1306721899&s=612x612&w=0&h=3fefuurKqym0enhWw_IvZPVbdmknPTM-G6maVt2bvno=" alt="Fortnite">
+                    <h5 class="product_name">Ring light Large</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 300</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="data:image/jpeg;base64,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" alt="Fortnite">
+                    <h5 class="product_name">Small Bag</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 3200</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg3RvON5kZktov49EY-FbrPW_VbDV-AIATyA&usqp=CAU" alt="Fortnite">
+                    <h5 class="product_name">Hand Bag</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 3400</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS48o4-xWW_G21IlosP0h3SKa4ypH3z0I2HxA&usqp=CAU" alt="Fortnite">
+                    <h5 class="product_name">Black Shoes</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >$ 3100</p>
+            </div>
+        </div>
+            </div>
+        </div>
+
+
+        <!-- offer -->
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="images/asus-banner.png" alt="">
+                        <!-- <img src="images/asus-banner.png" class="offer-img"/> -->
+                    </div>
+                    <div class="col-6 text-data text-white">
+                        <p>Top Prodcuts you should take it</p>
+                        <h1>Best Product limited offer!</h1>
+                        
+                        <a href="" class="btn">Buy Now &#8594</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+
+        <!-- -------footer------ -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our app</h3>
+                        <p>Top G5  Enabled Prodcuts with good support</p>
+                        <div class="app-logo">
+                            <img src="images/playstore.png"  width="30px" height="30px"alt="">
+                            <img src="images/appstore.png" width="30px" height="30px" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images" alt="">
+                        <p>Best technology enabled product?</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright @2024 2KEI ECOMO</p>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+
+</html>
