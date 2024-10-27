@@ -14,11 +14,7 @@ Responsive Design: Optimized for desktops, tablets, and mobile devices.
 
 ### Click on play button see 🎬 Demo:
 
-https://drive.google.com/file/d/1YznO-6A8OzkUp3O8lJobQ8VOOllPQnoD/view?usp=drivesdk
-
- ### 🌍 Live Demo
-
-The E-commerce web application can be [viewed online here](https://.netlify.app/).
+https://drive.google.com/file/d/1YznO-6A8OzkUp3O8lJobQ8VOOllPQnoD/view?usp=drivesdk
 
 Here are screenshots that show the E-commerce demo application in use.
 
