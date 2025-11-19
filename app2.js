@@ -1,7 +1,7 @@
  console.log('hi');
 $(".signUpButton").click(function () {
     console.log('hi from the sign up button')
-    $("#signUpModal").style("display", "block")
+    $("#signUpModal").css("display", "block")
 });
 
 $('#quantityOfUnicornsForm').submit(function(e) {
@@ -14,7 +14,3 @@ $('#quantityOfUnicornsForm').submit(function(e) {
 
 
 // $('#signUpBtn').modal('hide');
-                   
-
-
-     
